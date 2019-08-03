@@ -1,0 +1,11 @@
+{% if include.questions %}
+<h2>Pricing FAQ</h2>
+<dl class="faq">
+    {% for item in include.questions %}
+    <div>
+        <dt>{{ item.question }}</dt>
+        <dd>{{ item.answer }}</dd>
+    </div>
+    {% endfor %}
+</dl>
+{% endif %}
