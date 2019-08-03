@@ -80,6 +80,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+include: [ '_pages']
+
 exclude:
   - Gemfile
   - Gemfile.lock
