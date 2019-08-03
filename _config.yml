@@ -1,9 +1,9 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+title: Hydryne Template
+url: "https://paramdigma.es"
+baseurl: "/hydryne-jekyll-template"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -16,9 +16,9 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: Hydryne Template
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://github.com/Paramdigma/hydryne-jekyll-template
 
 # -----
 # Build
@@ -34,8 +34,7 @@ paginate_path: "/blog/:num/"
 permalink: pretty
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -44,8 +43,7 @@ defaults:
         content:
           width: 1500
           height: 2500
-  -
-    scope:
+  - scope:
       path: ""
       type: "staff_members"
     values:
@@ -53,18 +51,15 @@ defaults:
         image_path:
           width: 600
           height: 600
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: "index.html"
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "contact.html"
     values:
       full_width: true
@@ -80,34 +75,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-include: [ '_pages']
-
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
-
-_comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
-  pricing_table: Update the information in the pricing tables.
-  highlight: Emphasis the text
-  color: The background colour used in the plan name and call to action.
-  new_window: Open link in new window
