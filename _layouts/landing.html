@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% if page.hero %} {% include hero.html %} {% endif %}
+
+<div class="content">
+
+    {% if page.contents %}
+        {% for content in page.contents %}
+            {% include intro-block.html %} 
+        {% endfor %}
+    {% endif %}
+
+    {% if page.custom-content %}
+        {% include formated-content.html %} 
+    {% endif %}
+    
+    {% if page.testimonial %} 
+        {% include testimonial.html %} 
+    {% endif %}
+
+    {% if page.callout %} 
+        {% include callout.html %}
+    {% endif %}
+
+</div>

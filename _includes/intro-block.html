@@ -1,0 +1,12 @@
+<section>
+    <div class="container flex">
+        <div class="text editable">
+            <h2>{{ content.title }}</h2>
+            <p>{{ content.text }}</p>
+        </div>
+        <div class="image">
+            <img src="{{ site.baseurl }}/{{ content.image.url }}" alt="{{ content.image.alt }}"
+                class="screenshot editable" />
+        </div>
+    </div>
+</section>
