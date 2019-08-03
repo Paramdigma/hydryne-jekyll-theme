@@ -1,15 +1,16 @@
-# Hydra
+# Hydryne
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
+Marketing site template for Jekyll, based on the awesome theme **Hydra** by CloudCannon, with some extra modifications. Browse through a [live demo](https://paramdigma.com/hydryne-jekyll-theme).
 Increase the web presence of your brand with this configurable theme.
 
-![Hydra template screenshot](images/_screenshot.png)
+![Hydryne template screenshot](images/_screenshot.png)
 
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+Hydra was made by [Alan Rynne](http://rynne.es/) for [Paramdigma](https://paramdigma.com), an independent collective of Computational Designers, Architects and Engineers aiming to push technological adoption within the AEC industry.
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
 ## Features
+
+> Most features from Hydra have been maintained, although backwards compatibility is broken due to the changes required by GitHub's `remote-theme` feature.
 
 * Contact form
 * Pre-built pages
@@ -48,7 +49,7 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+<!-- TODO: Add editing instructions -->
 
 ### Posts
 
