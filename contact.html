@@ -3,18 +3,23 @@ title: Contact
 heading: Get in touch today
 description: We'd love to help you improve your sales.
 
+form:
+	to: alan@rynne.es
+	subject: The form subject...
+
 map:
   latitude: -45.8787605
   longitude: 170.5027976
   address: "1 George Street, Dunedin, New Zealand"
   zoom: 13
 ---
+
 <div class="map" id="map"></div>
 
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="support@example.com" />
+	<form action="https://formspree.io/{{ page.form.to }}" method="post" class="contact-form">
+		<input type="hidden" name="_to" value="{{ page.form.to }}" />
 		<input type="text" name="_gotcha" style="display: none;">
 
 		<label for="name">Full Name</label>
@@ -27,6 +32,10 @@ map:
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 		<input type="submit" value="Send Message" />
+		<input type="hidden" name="_subject" value="{{ page.form.subject }}" />
+
+		<input type="hidden" name="_next" value="{{ site.baseurl }}/contact-sucess.html" />
+
 	</form>
 
 	<div class="contact-details">
@@ -34,7 +43,7 @@ map:
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+		<p><a href="{{ page.form.to }}">{{ page.form.to }}</a></p>
 	</div>
 </div>
 
