@@ -5,7 +5,7 @@ description: We'd love to help you improve your sales.
 
 form:
   to: "alan@rynne.es"
-  subject: The form subject...
+  subject: New message from Hydryne Theme page
 
 map:
   latitude: -45.8787605
@@ -19,7 +19,6 @@ map:
 
 <div class="contact-box">
 	<form action="https://formspree.io/{{ page.form.to }}" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="{{ page.form.to }}" />
 		<input type="text" name="_gotcha" style="display: none;">
 
 		<label for="name">Full Name</label>
@@ -32,8 +31,8 @@ map:
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 		<input type="submit" value="Send Message" />
-		<input type="hidden" name="_subject" value="{{ page.form.subject }}" />
 
+		<input type="hidden" name="_subject" value="{{ page.form.subject }}" />
 		<input type="hidden" name="_next" value="{{ site.baseurl }}/contact-sucess.html" />
 
 	</form>
